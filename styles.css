@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header, main, footer {
+    max-width: 1000px;
+    height: auto;
+    margin:0 auto;
+    
+}
+h1, h2, h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+
+    
+}
+
+
+main{
+   
+    margin-top: 1em; 
+    background-color: rgb(148, 196, 148);
+    color: black;
+}
+
+header{
+    margin-top: 2em;
+    background-color: rgb(76, 168, 76);
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+nav:hover{
+    color: azure;
+}
+
+.homelink{
+    margin-left: 1em;
+    grid-column:1/2;
+}
+.aboutlink{
+    grid-column: 2/3
+}
+.contactlink{
+    grid-column: 3/4
+}
+.productlink{
+    margin-right: 1em;
+    grid-column: 4/5;
+    margin-top: 1em;
+}
+
+.home-nav{
+    text-align: center;
+    border-bottom: 1px solid black;
+
+}
+/* STYLES FOR HOME PAGE */
+#hero-image{
+    max-width: 800px;
+    margin: 2em 6em 6em;
+    height: auto;
+
+}
+section{
+    margin-left: 2em;
+    margin-bottom: 2em;
+    
+}
+ul > li, h3{
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+
+/* about us page styling */
+
+aside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+   
+ }
+aside img{
+    width: 50%;
+    height: auto;
+    border-radius: 1em ;
+
+}
+
+
+
+
+figure img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 3em;
+    margin-left: 8em;
+}
+figcaption{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 6em;
+    
+    
+   
+}
+.about_me_note{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 1em;
+    margin-left: 2em;
+    
+}
+
+.history{
+    
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-top: 4em;
+    margin-left: 2em;
+    border-top:1px solid black; 
+    border-bottom: 1px solid black;
+
+}
+.history img{
+    float: right;
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 2em;
+    
+}
+.history > h3, .history p{
+    margin-top: 2em;
+
+}
+.about_prod{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    margin-top: 4em;
+    margin-left: 2em;
+    
+}
+.about_prod img{
+    float: left;
+    margin-right: 3em;
+    width: 40%;
+    margin-bottom: 2em;
+}
+.about_prod > h3, p{
+    margin-right: 2em;
+}
+
+/* STYLES FOR CONTACT PAGE */
+.contact_us_section > h1{
+    padding-top: 2em;
+
+}
+
+.contactlink > p{
+    padding: 2em;
+    font-weight: bold;
+    font-size: 1.5;
+    font-family: system-ui,  Roboto, 'Open Sans', 'Helvetica Neue';
+}
+a{
+    font-size: 1em;
+}
+
+a:hover{
+    color: brown;
+}
+
+/* STYLES FOR PRODUCTS*/
+.product-images > li{
+    padding-top: 1em;
+    padding-bottom: 2em;
+    margin-left: 4em;
+    height: auto;
+}
+.product-images > h1, .product-images>h2{
+    text-align: center;
+    padding-top: 2em ;
+}
+.product-images > p{
+    margin-left: 6em;
+    border-bottom: 1px solid black;
+    font-size: large;
+}
+.product-images > h2:last-child{
+    padding: 2em;
+    
+}
+
+footer{
+    margin-top: 1em;
+    background-color: rgb(190, 154, 154);
+    display:flex;
+    justify-content: space-between;
+    padding: 1em;
+
+
+}
