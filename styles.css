@@ -31,27 +31,15 @@ header{
     background-color: rgb(76, 168, 76);
 }
 nav{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
     padding: 1em;
 }
 nav:hover{
     color: azure;
 }
 
-.homelink{
-    margin-left: 1em;
-    grid-column:1/2;
-}
-.aboutlink{
-    grid-column: 2/3
-}
-.contactlink{
-    grid-column: 3/4
-}
 .productlink{
-    margin-right: 1em;
-    grid-column: 4/5;
     margin-top: 1em;
 }
 
@@ -63,15 +51,16 @@ nav:hover{
 }
 /* STYLES FOR HOME PAGE */
 #hero-image{
-    max-width: 800px;
-    margin: 2em 6em 6em;
+   
+    margin: 1em 7em 0 7em ;
+    width: 80%;
     height: auto;
-
 }
-section{
+.home-section{
     margin-left: 2em;
-    margin-bottom: 2em;
-    
+    margin-top: 4em;
+    font-size: 1.4em;
+    padding-bottom: em;
 }
 ul > li, h3{
     margin-top: 2em;
@@ -88,6 +77,12 @@ aside{
     grid-template-rows: repeat(3, auto);
    
  }
+ aside > .about_prod, .about_me_note{
+    font-size: 2em;
+ }
+ aside > .history{
+    font-size: 1.3em;
+ }
 aside img{
     width: 50%;
     height: auto;
@@ -101,7 +96,7 @@ aside img{
 figure img{
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-top: 3em;
+    margin-top: 4em;
     margin-left: 8em;
 }
 figcaption{
@@ -115,7 +110,6 @@ figcaption{
 .about_me_note{
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 1em;
     margin-left: 2em;
     
 }
@@ -133,7 +127,7 @@ figcaption{
 .history img{
     float: right;
     width: 50%;
-    margin-top: 2em;
+    margin-top: 5em;
     margin-bottom: 2em;
     margin-right: 2em;
     
@@ -159,22 +153,28 @@ figcaption{
     margin-right: 2em;
 }
 
+
 /* STYLES FOR CONTACT PAGE */
 .contact_us_section > h1{
     padding-top: 2em;
+    font-size: 2.5em;
 
 }
 
 .contactlink > p{
-    padding: 2em;
+    padding: 2em 2em 2em 0;
     font-weight: bold;
     font-size: 1.5;
     font-family: system-ui,  Roboto, 'Open Sans', 'Helvetica Neue';
 }
+
 a{
     font-size: 1em;
 }
 
+.contact_us_section > ul, .contactlink > ul{
+    margin-left: 2em;
+}
 a:hover{
     color: brown;
 }
