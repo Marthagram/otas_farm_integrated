@@ -51,42 +51,42 @@ nav:hover{
 }
 /* STYLES FOR HOME PAGE */
 .hero-image > img{
-    max-width: 1000px;
-    min-width: 1000px;
+    width: 80%;
     height: auto;
     display: flex;
     justify-self: center;
     padding-top: 2em;
+    object-fit: contain;
 }
 .home-section{
     margin-left: 2em;
     margin-top: 4em;
     font-size: 1.4em;
     padding-bottom: 1em;
+    line-height: 1.5em;
 }
 ul > li, .home-section > h3{
     margin-top: 2em;
     margin-bottom: 2em;
 
 }
-
-
 /* about us page styling */
 
 aside{
     display: grid;
-    grid-template-columns: 2fr 700px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
+    line-height: 2em;
     
     
    
  }
  aside > .about_prod, .about_me_note{
-    font-size: 2em;
+    font-size: 1em;
  }
- aside > .history{
-    font-size: 1.3em;
- }
+ 
+    
+ 
 aside img{
     width: 50%;
     height: auto;
@@ -95,10 +95,7 @@ aside img{
 }
 
 
-
-
 figure img{
-    width: 250px;
     grid-column: 1/2;
     grid-row: 1/2;
     margin-top: 4em;
@@ -113,13 +110,12 @@ figcaption{
    
 }
 .about_me_note{
+    
     grid-column: 2/3;
     grid-row: 1/2;
     margin-left: 2em;
-    margin-top: 3em;
-    overflow-wrap: normal;
-    
-    
+    margin-top: 4em;
+   
 }
 
 .history{
