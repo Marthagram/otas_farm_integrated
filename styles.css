@@ -50,11 +50,13 @@ nav:hover{
 
 }
 /* STYLES FOR HOME PAGE */
-#hero-image{
-   
-    margin: 1em 7em 0 7em ;
-    width: 80%;
+.hero-image > img{
+    max-width: 1000px;
+    min-width: 1000px;
     height: auto;
+    display: flex;
+    justify-self: center;
+    padding-top: 2em;
 }
 .home-section{
     margin-left: 2em;
@@ -73,8 +75,10 @@ ul > li, .home-section > h3{
 
 aside{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 700px;
     grid-template-rows: repeat(3, auto);
+    
+    
    
  }
  aside > .about_prod, .about_me_note{
@@ -94,6 +98,7 @@ aside img{
 
 
 figure img{
+    width: 250px;
     grid-column: 1/2;
     grid-row: 1/2;
     margin-top: 4em;
@@ -112,6 +117,8 @@ figcaption{
     grid-row: 1/2;
     margin-left: 2em;
     margin-top: 3em;
+    overflow-wrap: normal;
+    
     
 }
 
